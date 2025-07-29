@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 3 - Módulo 4 - Bootcamp UNAB Frontend - Ejercicios de Arreglos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tarea 3 - Módulo 4 - Bootcamp UNAB Frontend</h1>
+            <p>Ejercicios de Arreglos en JavaScript - Implementación de funciones para manipular arreglos</p>
+        </header>
+
+        <main>
+            <!-- Ejercicio 1: Crear arreglo con dobles -->
+            <section class="exercise">
+                <h2>1. Crear Arreglo con Dobles</h2>
+                <p>Crea un arreglo de largo n, donde cada posición es el doble de la anterior (iniciando en 1)</p>
+                <div class="input-group">
+                    <label for="tamano">Tamaño del arreglo:</label>
+                    <input type="number" id="tamano" min="1" max="20" value="5">
+                    <button onclick="crearArregloDobles()">Generar Arreglo</button>
+                </div>
+                <div class="result" id="resultado1"></div>
+            </section>
+
+            <!-- Ejercicio 2: Encontrar el mayor número -->
+            <section class="exercise">
+                <h2>2. Encontrar Mayor Número</h2>
+                <p>Encuentra el mayor número en un arreglo de 10 elementos</p>
+                <div class="input-group">
+                    <label for="arreglo10">Arreglo (10 números separados por comas):</label>
+                    <input type="text" id="arreglo10" placeholder="1,5,3,9,2,8,4,7,6,10">
+                    <button onclick="generarNumerosAleatorios()"> Generar 10 Números</button>
+                    <button onclick="encontrarMayor()">Encontrar Mayor</button>
+                </div>
+                <div class="result" id="resultado2"></div>
+            </section>
+
+            <!-- Ejercicio 3: Obtener día de la semana -->
+            <section class="exercise">
+                <h2>3. Obtener Día de la Semana</h2>
+                <p>Obtiene el día de la semana según el número (1=Lunes, 7=Domingo)</p>
+                <div class="input-group">
+                    <label for="numeroDia">Número del día (1-7):</label>
+                    <input type="number" id="numeroDia" min="1" max="7" value="1">
+                    <button onclick="obtenerDia()">Obtener Día</button>
+                </div>
+                <div class="result" id="resultado3"></div>
+            </section>
+
+            <!-- Ejercicio 4: Buscar elemento en arreglo -->
+            <section class="exercise">
+                <h2>4. Buscar Elemento en Arreglo</h2>
+                <p>Busca un elemento específico en un arreglo de números</p>
+                <div class="input-group">
+                    <label for="arregloBusqueda">Arreglo (números separados por comas):</label>
+                    <input type="text" id="arregloBusqueda" placeholder="1,5,3,9,2,8,4,7,6,10">
+                    <button onclick="generarArregloAleatorio()"> Generar Arreglo Aleatorio</button>
+                </div>
+                <div class="input-group">
+                    <label for="elementoBuscar">Elemento a buscar:</label>
+                    <input type="number" id="elementoBuscar" value="5">
+                    <button onclick="buscarElemento()">Buscar</button>
+                </div>
+                <div class="result" id="resultado4"></div>
+            </section>
+
+            <!-- Ejercicio 5: Ordenar arreglo -->
+            <section class="exercise">
+                <h2>5. Ordenar Arreglo Ascendentemente</h2>
+                <p>Ordena un arreglo de números de forma ascendente</p>
+                <div class="input-group">
+                    <label for="arregloDesordenado">Arreglo desordenado (números separados por comas):</label>
+                    <input type="text" id="arregloDesordenado" placeholder="9,3,7,1,5,2,8,4,6">
+                    <button onclick="ordenarArreglo()">Ordenar</button>
+                </div>
+                <div class="result" id="resultado5"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 - Tarea 3 - Módulo 4 - Bootcamp UNAB Frontend - Ejercicios de JavaScript</p>
+        </footer>
+    </div>
+
+    <script src="script.js/ejercicios.js"></script>
+</body>
+</html>
